@@ -1,0 +1,27 @@
+<button class="add-time" (click)="onAddTimeClick()">Add Time +</button>
+
+@if(isAddingTime) {
+    <div class="add-time-form">
+        <div class="close" (click)="close()">X</div>
+        <div class="line">
+            <div class="label">Name</div>
+            <select name="" id="name" [value]="newResult.driver">
+                <option>Bill</option>
+                <option>Brady</option>
+                <option>Connor</option>
+                <option>James</option>
+                <option>Matt</option>
+                <option>Mike</option>
+                <option>Roberto</option>
+            </select>
+        </div>
+        <div class="line">
+            <div class="label">Class</div>
+            <select name="" id="name" [value]="newResult.class">
+                <option>XA</option>
+                <option>XB</option>
+            </select>
+        </div>
+        <button class="save">Save</button>
+    </div>
+}
